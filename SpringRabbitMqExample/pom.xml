@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.fo0.spring.rabbit.example</groupId>
+	<artifactId>SpringRabbitMqExample</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>SpringRabbitMqExample</name>
+
+
+	<properties>
+		<java.version>1.8</java.version>
+		<version.jdk>1.8</version.jdk>
+		<!-- utils -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<!-- spring -->
+		<version.spring.framework>2.2.6.RELEASE</version.spring.framework>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-amqp</artifactId>
+			<version>${version.spring.framework}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>[1.16.20, )</version>
+		</dependency>
+	</dependencies>
+
+	<modules>
+		<module>SimpleQueue</module>
+		<module>RpcQueue</module>
+		<module>ErrorQueue</module>
+		<module>Utils</module>
+	</modules>
+</project>
