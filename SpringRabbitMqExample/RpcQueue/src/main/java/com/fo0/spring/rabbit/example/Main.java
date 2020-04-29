@@ -12,7 +12,7 @@ import com.fo0.spring.rabbit.example.utils.utils.CONSTANTS_QUEUE;
 public class Main {
 
 	@Autowired
-	private MessageProducer messageProducer;
+	private Producer messageProducer;
 
 	public static void main(String[] args) {
 		new SpringApplicationBuilder(Main.class).properties(CONSTANTS_QUEUE.BOOT_PROPS).build().run(args);

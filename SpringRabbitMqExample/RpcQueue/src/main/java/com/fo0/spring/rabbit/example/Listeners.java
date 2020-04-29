@@ -12,8 +12,8 @@ import lombok.extern.log4j.Log4j2;
 public class Listeners {
 
 	@RabbitListener(queues = CONSTANTS_QUEUE.QUEUE_MESSAGES)
-	public void processMessage() throws Exception {
-		log.info("Received message and throwing exception");
+	public void processMessage(String message) throws Exception {
+		log.info("Received message " + message);
 	}
 
 //	@Bean
