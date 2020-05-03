@@ -1,5 +1,4 @@
 # SpringRabbitMqExample
-SpringRabbitMQExample 
 
 ### RabbitMQ Docker Container
 ```bash
